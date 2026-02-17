@@ -14,9 +14,13 @@
   };
 
   # Enable firewall with necessary ports 
-  # 4533 - Navidrome
-  # 5030, 50300 - slskd
-  # 6881 = qbittorrent
+  # Navidrome - 4533
+  # slskd - 5030, 50300
+  # qbittorrent - 6881
+  # metadata-remote - 8338
+  # Focalboard - 8000
+  # Dozzle - 8888
+
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ 80 443 2222 4533 5030 50300 8080 6881 8383 ]; 
