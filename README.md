@@ -1,5 +1,7 @@
-# NixOS Configuration
-Recently switched to NixOS for my server as it automates a lot of things I would have to rather change manually. It is even better than ansible in my opinion.
+# Project Summary
+The repository contains the declarative configuration of my NixOS home server, designed to demonstrate a reproducible system using infrastructure-as-code principles.
+
+The system runs self-hosted services via Docker, with automated updates, security hardening, and fully reproducible system from a version-controlled configuration.
 
 ## System Overview
 - **Hostname:** nixos
@@ -14,7 +16,7 @@ Recently switched to NixOS for my server as it automates a lot of things I would
 
 - **Music Streaming:** Navidrome active on port 4533 via docker, serving music from /mnt/Files/Music
 - **Network:** Tailscale enabled with firewall support for the tailscale0 interface.
-- **Storage:** NTFS partition (UUID: 01D858C886F164A0) mounted at /mnt/Files with systemd automount
+- **Storage:** NTFS partitions mounted at /mnt/XXXX with systemd automount
 - **Power Management:** Laptop lid switch set to ignore (stay awake) and lock on external power
 - **CPU:** Intel microcode updates enabled for security and auto-cpufreq for optimization
 
@@ -52,6 +54,9 @@ Recently switched to NixOS for my server as it automates a lot of things I would
 
 ---
 
+## Minecraft Server
+- 
+
 ## Docker containers:
 
 ### Navidrome (Music Streaming)
@@ -60,8 +65,8 @@ A modern, high-performance music server and streamer.
 - **Library Path:** `/mnt/Files/Music` (Read-only)
 - **Features:** - Automatically scans music library every hour.
   - Persistent data storage for user settings and metadata.
-  - Compatible with Subsonic clients. I personally use [Feishin](https://github.com/jeffvli/feishin) (for PC) + [Substracks](https://github.com/austinried/subtracks) (for android)
-  - Supports multiple music formats including MP3, FLAC, and WAV.
+  - Compatible with Subsonic clients.
+  - Supports multiple music formats including MP3, AAC, FLAC, and WAV.
 
 ### slskd (Soulseek Web Client)
 A web-based client for the Soulseek file-sharing network.
