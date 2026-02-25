@@ -3,9 +3,9 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/system.nix
-    ./modules/security.nix
-    ./modules/services.nix
+    ./modules/core-system.nix
+    ./modules/security-hardening.nix
+    ./modules/extra-services.nix
   ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -45,7 +45,6 @@
   programs.vim.enable = true;
   programs.vim.defaultEditor = true;
 
-  
   # Some shell aliases for long commands
   environment.shellAliases = {
     nix-switch = "sudo nixos-rebuild switch";

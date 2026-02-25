@@ -55,7 +55,9 @@ The system runs self-hosted services via Docker, with automated updates, securit
 ---
 
 ## Minecraft Server
-- 
+- Runs server via PaperMC package, a more optimized fork of Minecraft server.
+- **Port:** `46565`
+- Max 4 players allowed (for now) 
 
 ## Docker containers:
 
