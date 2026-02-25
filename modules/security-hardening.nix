@@ -20,7 +20,7 @@
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ 80 443 2222 4533 5030 50300 8080 6881 8383 26565]; 
-    allowedUDPPorts = [ 50300 6881 26565 ];
+    allowedUDPPorts = [ 50300 6881 26565 41641 ];
     checkReversePath = "loose"; 
     trustedInterfaces = [ "tailscale0" ];
   };
